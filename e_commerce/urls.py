@@ -12,3 +12,5 @@ urlpatterns = [
         ProductViewSet.as_view({"get": "find_products_in_category"}),
     ),
 ]
+
+
