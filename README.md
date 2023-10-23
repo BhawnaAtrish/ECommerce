@@ -13,7 +13,7 @@ This Python Django project implements a CRUD API using the Django REST framework
   ```bash
   curl --location 'https://atrishbhawna.pythonanywhere.com/products/' \
 --data ''
-``
+```
 - **Response**:
   - **Status Code**: 200 OK
   - **Response Body**: A JSON array containing serialized data of all products. Each product includes attributes such as id, name, description, price, stock, created_at, manufacturer, category, is_featured, weight, dimensions, is_available, rating, brand, is_discounted, and discount_price.
