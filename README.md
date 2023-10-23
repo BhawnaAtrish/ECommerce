@@ -10,9 +10,8 @@ This Python Django project implements a CRUD API using the Django REST framework
 - **HTTP Method**: GET
 - **Description**: Retrieve a list of all products.
 - **cURL**:
-  ```shell
   curl --location 'https://atrishbhawna.pythonanywhere.com/products/' \
---data ''
+  --data ''
 
 - **Response**:
   - **Status Code**: 200 OK
@@ -65,9 +64,8 @@ This Python Django project implements a CRUD API using the Django REST framework
 - **HTTP Method**: GET
 - **Description**: Retrieve detailed information about a specific product based on its unique identifier (product_id).
 - **cURL**:
-```shell
 curl --location 'https://atrishbhawna.pythonanywhere.com/products/2/' \
---data ''```
+--data ''
 
 - **Response**:
   - **Status Code**: 200 OK
@@ -100,7 +98,6 @@ curl --location 'https://atrishbhawna.pythonanywhere.com/products/2/' \
 - **HTTP Method**: POST
 - **Description**: Create a new product with specified attributes. The request body should contain JSON data with product details.
 - **cURL**:
-  ```
   curl --location 'https://atrishbhawna.pythonanywhere.com/products/' \
 --header 'Content-Type: application/json' \
 --data '{
@@ -119,7 +116,6 @@ curl --location 'https://atrishbhawna.pythonanywhere.com/products/2/' \
     "is_discounted": false,
     "discount_price": null
 }'
-```
 - **Response**:
   - **Status Code**: 201 Created
   - **Response Body**: A JSON object containing serialized data of the newly created product, including its unique id.
@@ -170,14 +166,13 @@ curl --location 'https://atrishbhawna.pythonanywhere.com/products/2/' \
 - **HTTP Method**: PUT
 - **Description**: Update the details of a specific product based on its unique identifier (product_id). The request body should contain JSON data with the attributes to be updated.
 - **cURL**:
-```
 curl --location --request PUT 'https://atrishbhawna.pythonanywhere.com/products/2/' \
 --header 'Content-Type: application/json' \
 --data '{
     "name" : "product1",
     "price": 20.0
 }'
-```
+
 - **Response**:
   - **Status Code**: 200 OK
   - **Response Body**: A JSON object containing serialized data of the updated product.
@@ -216,10 +211,9 @@ curl --location --request PUT 'https://atrishbhawna.pythonanywhere.com/products/
 - **HTTP Method**: DELETE
 - **Description**: Delete a specific product based on its unique identifier (product_id).
 -**cURL**:
-```
 curl --location --request DELETE 'https://atrishbhawna.pythonanywhere.com/products/2/' \
 --data ''
-```
+
 - **Response**:
   - **Status Code**: 204 No Content
 
@@ -231,13 +225,12 @@ curl --location --request DELETE 'https://atrishbhawna.pythonanywhere.com/produc
 - **HTTP Method**: POST
 - **Description**: Retrieve and serialize products based on a specified category. The category is provided as a query parameter in the URL.
 - **cURL**:
-```
 curl --location --request GET 'https://atrishbhawna.pythonanywhere.com/find_products_in_category' \
 --header 'Content-Type: application/json' \
 --data '{
     "category": "other"
 }'
-```
+
 - **Query Parameter**:
   - `category`: The category for which products should be retrieved.
 - **Response**:
