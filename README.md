@@ -65,10 +65,9 @@ This Python Django project implements a CRUD API using the Django REST framework
 - **HTTP Method**: GET
 - **Description**: Retrieve detailed information about a specific product based on its unique identifier (product_id).
 - **cURL**:
-```
-curl --location 'https://atrishbhawna.pythonanywhere.com/products/2/' \
---data ''
-```
+```shell
+curl --location 'https://atrishbhawna.pythonanywhere.com/products/2/' \ --data ''
+
 - **Response**:
   - **Status Code**: 200 OK
   - **Response Body**: A JSON object containing serialized data of the specified product, including attributes like id, name, description, price, stock, created_at, manufacturer, category, is_featured, weight, dimensions, is_available, rating, brand, is_discounted, and discount_price.
