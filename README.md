@@ -66,7 +66,8 @@ This Python Django project implements a CRUD API using the Django REST framework
 - **Description**: Retrieve detailed information about a specific product based on its unique identifier (product_id).
 - **cURL**:
 ```shell
-curl --location 'https://atrishbhawna.pythonanywhere.com/products/2/' \ --data ''
+curl --location 'https://atrishbhawna.pythonanywhere.com/products/2/' \
+--data ''```
 
 - **Response**:
   - **Status Code**: 200 OK
